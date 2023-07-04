@@ -9,14 +9,14 @@ type WeatherHeaderProps = {
 }
 
 let timeout: ReturnType<typeof setTimeout> | null;
-let currentValue: string;
+// let currentValue: string;
 
 const fetchWeatherCityIds = async (value: string, callback: Function) => {
 	if (timeout) {
     clearTimeout(timeout);
     timeout = null;
   }
-  currentValue = value;
+  // currentValue = value;
 
   if (value) {
     timeout = setTimeout(() => {
